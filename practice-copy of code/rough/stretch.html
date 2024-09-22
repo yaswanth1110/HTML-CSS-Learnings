@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Default Stretch Example</title>
+  <style>
+    .container {
+      display: flex;
+      height: 300px; /* Set a fixed height for the container */
+      background-color: lightgray;
+    }
+    .item {
+      padding: 20px;
+      background-color: lightblue;
+      margin: 5px;
+      /* No explicit height is set for the items, so they will stretch */
+    }
+    .item:nth-child(2) {
+      background-color: lightgreen;
+    }
+    .item:nth-child(3) {
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">Div 1</div>
+    <div class="item">Div 2</div>
+    <div class="item">Div 3</div>
+  </div>
+
+</body>
+</html>
